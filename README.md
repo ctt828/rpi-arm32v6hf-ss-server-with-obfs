@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ctt828/rpi-ss-server-with-obfs.svg?branch=master)](https://travis-ci.org/ctt828/rpi-ss-server-with-obfs)
+
 # rpi-ss-server-with-obfs
 Starts a shadowsocks-libev server with simple-obfs enabled on RPi (armhf).
 
