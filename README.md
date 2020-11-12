@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ctt828/rpi-ss-server-with-obfs.svg?branch=master)](https://travis-ci.org/ctt828/rpi-ss-server-with-obfs)
+[![Build Status](https://travis-ci.org/ctt828/rpi-ss-server-with-obfs.svg?branch=master)](https://travis-ci.org/ctt828/rpi-arm32v6hf-ss-server-with-obfs)
 
 # rpi-arm32v6hf-ss-server-with-obfs
 Starts a shadowsocks-libev server with simple-obfs enabled on Raspberry Pi 1 (arm32v6hf).
