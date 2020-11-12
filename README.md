@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/ctt828/rpi-ss-server-with-obfs.svg?branch=master)](https://travis-ci.org/ctt828/rpi-ss-server-with-obfs)
 
-# rpi-ss-server-with-obfs
-Starts a shadowsocks-libev server with simple-obfs enabled on RPi (armhf).
+# rpi-arm32v6hf-ss-server-with-obfs
+Starts a shadowsocks-libev server with simple-obfs enabled on Raspberry Pi 1 (arm32v6hf).
 
 By default, AEAD encryption chacha20-ietf-poly1305, TLS obfuscation, IPv6, TCP fast open, UDP relay, Google DNS are enabled :
 
