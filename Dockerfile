@@ -2,8 +2,7 @@
 # Dockerfile for shadowsocks-libev and simple-obfs
 #
 
-#FROM arm32v6/alpine
-FROM ctt828/rpi-arm32v6-alpine
+FROM ctt828/rpi-arm32v6hf-alpine
 
 ENV SERVER_ADDR           0.0.0.0
 ENV SERVER_ADDR_IPV6      ::
