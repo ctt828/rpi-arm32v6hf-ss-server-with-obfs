@@ -5,8 +5,8 @@ language: bash
 script:
 # prepare qemu
 - docker run --rm --privileged multiarch/qemu-user-static:register --reset
-- docker build -t ctt828/rpi-ss-server-with-obfs .
-- docker run ctt828/rpi-ss-server-with-obfs ss-server -h
+- docker build -t ctt828/rpi-arm32v6hf-ss-server-with-obfs .
+- docker run ctt828/rpi-arm32v6hf-ss-server-with-obfs ss-server -h
 - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 - docker push ctt828/rpi-arm32v6hf-ss-server-with-obfs
 notifications:
