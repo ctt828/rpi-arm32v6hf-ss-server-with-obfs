@@ -5,10 +5,10 @@ language: bash
 script:
 # prepare qemu
 - docker run --rm --privileged multiarch/qemu-user-static:register --reset
-- docker build -t ctt828/rpi-arm32v6hf-ss-server-with-obfs .
-- docker run ctt828/rpi-arm32v6hf-ss-server-with-obfs ss-server -h
+- docker build -t ctt828/shadowsocks-libev-arm32v6hf .
+- docker run ctt828/shadowsocks-libev-arm32v6hf ss-server -h
 - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-- docker push ctt828/rpi-arm32v6hf-ss-server-with-obfs
+- docker push ctt828/shadowsocks-libev-arm32v6hf
 notifications:
   slack:
     secure: TR0yFR9NZ+k3lFQNt9f7BW7JHzWONar5dV0MfuNzdKB9OgvjQRGnULdhPzz5y6KSuQlR+/y4z1aSlpmJVm16WakYtr8356ftW7ymg7r66e2AnNlqjvqAFWKzgDcMhnbM8q2oZJIJJGMn0mk2cUhXKvoNburA8jwktmlgNJPAfiCOK7A7QKLxAvcdMfm7Z8qIwFRRPQPcJvCr7u6xrriRGM56MXlRsA4U9Q4XumrjDRqSpnFQxori49iHY3wVsQNX+tIO5d6tn/IQ7gda7i0wb6NEMTtNGOCJ4DEhId9sTB81Ky+tK8zocAIyk66+uIpZ8T8WykC2q5IgXYDxpr9QmnUTzYT/fnFxxDzg3yucktvFskgg1ik/hA6pbpoKlPXQ66lDYgRRWFKnK0NPwUQvcrgXWEpx+gEYDldm6NBJeapGaN+0894KV+GP88mjd1d0yLKrED63C/+te3qmMXDEsBk/vO02A12rywU7d0ZSBGs1WGP7lTEfatMOTc6S5amM3IzOfGOdFq6DLJ69K55PAEP1LN+y/IM1zI0cxO11bNWegzgQlNmAuCU1MFmFeCtE5b2HH7m15MXgCAECaDnpnYqZclop4OgyC3EfP4kA9uVdgBH09jN8xmXDers85pVnOAFMAwJsX6/TlqgBhvarrxokFoDmB29BVwaCQZSkhKM=
