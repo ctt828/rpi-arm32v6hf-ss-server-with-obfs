@@ -4,8 +4,6 @@
 
 FROM ctt828/alpine-arm32v6hf
 
-ENV SERVER_ADDR           0.0.0.0
-ENV SERVER_ADDR_IPV6      ::0
 ENV SERVER_PORT           8388
 ENV PASSWORD              password
 ENV METHOD                chacha20-ietf-poly1305
@@ -59,8 +57,6 @@ RUN set -ex \
  && rm -rf ./simple-obfs
 
 CMD exec ss-server \
-      -s $SERVER_ADDR \
-      -s $SERVER_ADDR_IPV6 \
       -p $SERVER_PORT \
       -k $PASSWORD \
       -m $METHOD \
